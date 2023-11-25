@@ -1,0 +1,139 @@
+/*Estilos generales
+
+    1-root
+
+*/
+
+:root{
+    --background-principal:#57007B;
+    --background-secundario:#58CAEA;
+    --background-banner-slider:#F9F9FF;
+    /* --background-banner-slider:#E7DAED; */
+}
+
+
+/* Estilos de Main - Banner-Slider */
+
+.banner-principal{
+    height: 90vh; 
+    border-bottom: 10px solid #57007B;
+}
+
+.banner-principal-container{
+    height: 80vh;
+}
+
+/* Estilo imagen banner-principal-container */
+.transition-img {
+    animation: transitionimage 3s ease-in-out infinite;
+    height: 50vh;
+}
+
+@keyframes transitionimage {
+    0% {
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        margin-top: 50px; /* Ajusta según tus necesidades */
+        padding-top: 50px; /* Ajusta según tus necesidades */
+    }
+    50% {
+        margin-bottom: 50px;
+        padding-bottom: 90px;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+    100%{
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        margin-top: 50px; /* Ajusta según tus necesidades */
+        padding-top: 50px; /* Ajusta según tus necesidades */
+    }
+}
+
+/* Esilos  banner-slider*/
+
+.banner-slider-container{
+    background: var(--background-banner-slider);
+    min-height: 70vh;
+
+}
+
+.banner-slider-container div h2{
+    font-weight: bold;
+}
+
+.cardseccions{
+    height: 100%;
+    transition: all ease .4s;
+    border-radius: 20px !important;
+    /* width: 80%; */
+}
+
+.cardseccions:hover{
+    
+    border: 1px solid #57007B;
+    box-shadow: 0 0 10px #57007B !important;
+}
+
+.cardseccions-numbers{
+    border-radius: 100px;
+    font-size: 50px;
+    width: 100%;
+    margin: auto;
+    border: 3px solid var(--background-principal);
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+@media (max-width: 790px) {
+    .banner-principal{
+        height: 100vh; 
+    }
+    
+    .banner-principal-container{
+        height: 100vh;
+    }
+    .cardseccions{
+        width: 45%;
+        margin: 5px auto !important;
+        margin-bottom: 20px !important; 
+    }
+    .cardseccions-numbers{
+        font-size: 30px;
+    }
+    .card-title{
+        font-weight: bold;
+        font-size: 20px !important;
+    }
+
+}
+
+/* Mapa */
+#map {
+    height: 100%;
+    min-height: 100vh !important;
+    border-radius: 20px !important;
+  }
+
+  .form-select{
+    border: 2px solid var(--background-principal) !important;
+    color: var(--background-principal);
+    width: 50%;
+    cursor: pointer;
+}
+
+.form-select:hover{
+    background: var(--background-principal);
+    color: var(--background-banner-slider);
+}
+
+.form-select::after{
+    background-color: var(--background-principal);
+}
+
+.form-select:active{
+    background: #F9F9FF;
+    color: var(--background-principal);
+}
